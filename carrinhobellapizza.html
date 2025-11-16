@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho — Bella Pizza</title>
+  <link rel="stylesheet" href="bellapizza.css">
+</head>
+
+<body class="home-page">
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <img src="Design_sem_nome__16_-removebg-preview.png" alt="Bella Pizza" class="logo">
+            <span class="brand-name">Bella Pizza</span>
+        </div>
+
+        <nav class="main-nav">
+            <!-- CORREÇÃO AQUI -->
+            <a href="bellapizza.html">Início</a>
+
+            <a href="cardapio.html">Cardápio</a>
+            <a href="loginbellapizza.html">Conta</a>
+            <a href="carrinhobellapizza.html" class="active">
+                Carrinho <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <h1 style="text-align:center; margin-bottom:20px;">Seu Carrinho</h1>
+
+    <!-- LISTA DOS ITENS -->
+    <div class="cart-panel">
+        <div class="cart-items" id="cart-items"></div>
+
+        <div class="cart-summary">
+            <div class="summary-left">
+                <button id="clear-cart" class="btn white">Limpar Carrinho</button>
+            </div>
+            <div class="summary-right">
+                <p><strong>Total:</strong></p>
+                <p id="cart-subtotal">R$ 0,00</p>
+                <div style="margin-top:10px;">
+                  <button id="checkout-btn" class="btn red">Finalizar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    © 2025 Bella Pizza — Todos os direitos reservados.
+</footer>
+
+<script src="bellapizza.js"></script>
+</body>
+</html>
