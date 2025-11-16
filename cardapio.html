@@ -1,0 +1,230 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bella Pizza - Cardápio</title>
+  <link rel="stylesheet" href="bellapizza.css" />
+</head>
+
+<body>
+
+  <!-- HEADER PADRÃO IGUAL AO DA HOME -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="Design_sem_nome__16_-removebg-preview.png" alt="Bella Pizza Logo" class="logo">
+        <span class="brand-name">Bella Pizza</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="bellapizza.html">Início</a>
+        <a href="cardapio.html" class="active">Cardápio</a>
+        <a href="loginbellapizza.html" id="nav-account">Conta</a>
+        <a href="carrinhobellapizza.html" id="nav-cart">
+          Carrinho 
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO DO CARDÁPIO -->
+  <section class="hero hero-cardapio">
+    <h1>Nosso Cardápio</h1>
+    <p class="hero-sub">Escolha sua pizza favorita e faça seu pedido</p>
+  </section>
+
+  <!-- BOTÕES DE FILTRO -->
+  <div class="filters">
+    <button class="filter-btn active" data-cat="todas">Todas</button>
+    <button class="filter-btn" data-cat="tradicionais">Tradicionais</button>
+    <button class="filter-btn" data-cat="especiais">Especiais</button>
+    <button class="filter-btn" data-cat="vegetarianas">Vegetarianas</button>
+  </div>
+
+  <!-- GRID DE PRODUTOS -->
+  <main class="container">
+    <section class="product-grid">
+
+      <!-- MARGHERITA -->
+      <article class="product-card" data-cat="tradicionais">
+        <div class="product-media">
+          <img src="Pizza de Marguerita.jpeg" alt="Margherita">
+        </div>
+
+        <span class="tag">Mais Pedida</span>
+
+        <div class="product-body">
+          <h3>Margherita</h3>
+          <p>Molho de tomate, mussarela, manjericão fresco e azeite</p>
+          <span class="price">R$ 45,90</span>
+
+          <button class="add-to-cart"
+              data-name="Margherita"
+              data-price="45.90"
+              data-img="Pizza de Marguerita.jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+      <!-- CALABRESA -->
+      <article class="product-card" data-cat="tradicionais">
+        <div class="product-media">
+          <img src="transferir (26).jpeg" alt="Calabresa">
+        </div>
+
+        <span class="tag">Mais Pedida</span>
+
+        <div class="product-body">
+          <h3>Calabresa</h3>
+          <p>Calabresa fatiada, cebola, mussarela e azeitonas</p>
+          <span class="price">R$ 48,90</span>
+
+          <button class="add-to-cart"
+              data-name="Calabresa"
+              data-price="48.90"
+              data-img="transferir (26).jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+      <!-- PORTUGUESA -->
+      <article class="product-card" data-cat="especiais">
+        <div class="product-media">
+          <img src="Pizza Portuguesa da casa, com massa de revista - Cozinha Roman.jpeg" alt="Portuguesa">
+        </div>
+
+        <span class="tag">Mais Pedida</span>
+
+        <div class="product-body">
+          <h3>Portuguesa</h3>
+          <p>Presunto, ovos, cebola, mussarela e azeitonas</p>
+          <span class="price">R$ 52,90</span>
+
+          <button class="add-to-cart"
+              data-name="Portuguesa"
+              data-price="52.90"
+              data-img="Pizza Portuguesa da casa, com massa de revista - Cozinha Roman.jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+      <!-- QUATRO QUEIJOS -->
+      <article class="product-card" data-cat="especiais">
+        <div class="product-media">
+          <img src="Cheesy pizza.jpeg" alt="Quatro Queijos">
+        </div>
+
+        <div class="product-body">
+          <h3>Quatro Queijos</h3>
+          <p>Mussarela, provolone, parmesão e gorgonzola</p>
+          <span class="price">R$ 55,90</span>
+
+          <button class="add-to-cart"
+              data-name="Quatro Queijos"
+              data-price="55.90"
+              data-img="Cheesy pizza.jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+      <!-- FRANGO COM CATUPIRY -->
+      <article class="product-card" data-cat="tradicionais">
+        <div class="product-media">
+          <img src="frango com catupiry.jpeg" alt="Frango Catupiry">
+        </div>
+
+        <span class="tag">Mais Pedida</span>
+
+        <div class="product-body">
+          <h3>Frango Catupiry</h3>
+          <p>Frango desfiado, catupiry, mussarela e milho</p>
+          <span class="price">R$ 49,90</span>
+
+          <button class="add-to-cart"
+              data-name="Frango Catupiry"
+              data-price="49.90"
+              data-img="frango com catupiry.jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+      <!-- PEPPERONI -->
+      <article class="product-card" data-cat="especiais">
+        <div class="product-media">
+          <img src="pizza de peperoni.jpeg" alt="Pepperoni">
+        </div>
+
+        <div class="product-body">
+          <h3>Pepperoni</h3>
+          <p>Pepperoni italiano, mussarela e orégano</p>
+          <span class="price">R$ 58,90</span>
+
+          <button class="add-to-cart"
+              data-name="Pepperoni"
+              data-price="58.90"
+              data-img="pizza de peperoni.jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+      <!-- VEGETARIANA -->
+      <article class="product-card" data-cat="vegetarianas">
+        <div class="product-media">
+          <img src="pizza vegetariana.jpeg" alt="Vegetariana">
+        </div>
+
+        <div class="product-body">
+          <h3>Vegetariana</h3>
+          <p>Tomate, pimentão, cebola, champignon e azeitonas</p>
+          <span class="price">R$ 46,90</span>
+
+          <button class="add-to-cart"
+              data-name="Vegetariana"
+              data-price="46.90"
+              data-img="pizza vegetariana.jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+      <!-- NAPOLITANA -->
+      <article class="product-card" data-cat="tradicionais">
+        <div class="product-media">
+          <img src="pizza napolitana.jpeg" alt="Napolitana">
+        </div>
+
+        <div class="product-body">
+          <h3>Napolitana</h3>
+          <p>Mussarela, tomate, parmesão e manjericão</p>
+          <span class="price">R$ 47,90</span>
+
+          <button class="add-to-cart"
+              data-name="Napolitana"
+              data-price="47.90"
+              data-img="pizza napolitana.jpeg">
+            ➕ Adicionar ao Carrinho
+          </button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    © 2025 Bella Pizza - Todos os direitos reservados.
+  </footer>
+
+  <script src="bellapizza.js"></script>
+</body>
+</html>
+
+
