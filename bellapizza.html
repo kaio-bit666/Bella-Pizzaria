@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bella Pizza — Início</title>
+  <link rel="stylesheet" href="bellapizza.css" />
+</head>
+
+<body class="home-page">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="Design_sem_nome__16_-removebg-preview.png" alt="Bella Pizza" class="logo" />
+        <span class="brand-name">Bella Pizza</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="bellapizza.html" class="active">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="loginbellapizza.html" id="nav-account">Conta</a>
+        <a href="carrinhobellapizza.html" id="nav-cart">
+          Carrinho <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+
+    <h1>A Melhor Pizza da <span>Cidade</span></h1>
+    <p class="hero-sub">
+      Pizzas artesanais feitas com ingredientes frescos e muito amor.
+      Entrega rápida e quentinha na sua casa!
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn red" href="cardapio.html">🍕 Ver Cardápio</a>
+      <button class="btn white" id="btn-fazer-pedido">🧾 Fazer Pedido</button>
+    </div>
+
+    <!-- MAIS PEDIDAS -->
+    <section class="menu-preview">
+      <h2>Mais Pedidas</h2>
+
+      <div class="pizza-grid">
+
+        <!-- MARGHERITA -->
+        <div class="pizza-card">
+          <div class="pizza-img">
+            <img src="Pizza de Marguerita.jpeg" alt="Pizza Margherita">
+          </div>
+          <h4>Margherita</h4>
+          <p>Molho de tomate, mussarela e manjericão</p>
+          <span class="price">R$ 45,90</span>
+          <button class="btn-add"
+            data-name="Margherita"
+            data-price="45.90"
+            data-img="Pizza de Marguerita.jpeg">
+            Adicionar
+          </button>
+        </div>
+
+        <!-- CALABRESA -->
+        <div class="pizza-card">
+          <div class="pizza-img">
+            <img src="transferir (26).jpeg" alt="Pizza Calabresa">
+          </div>
+          <h4>Calabresa</h4>
+          <p>Calabresa fatiada, cebola e mussarela</p>
+          <span class="price">R$ 48,90</span>
+          <button class="btn-add"
+            data-name="Calabresa"
+            data-price="48.90"
+            data-img="transferir (26).jpeg">
+            Adicionar
+          </button>
+        </div>
+
+        <!-- FRANGO CATUPIRY -->
+        <div class="pizza-card">
+          <div class="pizza-img">
+            <img src="frango com catupiry.jpeg" alt="Frango Catupiry">
+          </div>
+          <h4>Frango Catupiry</h4>
+          <p>Frango desfiado e catupiry</p>
+          <span class="price">R$ 51,90</span>
+          <button class="btn-add"
+            data-name="Frango Catupiry"
+            data-price="51.90"
+            data-img="frango com catupiry.jpeg">
+            Adicionar
+          </button>
+        </div>
+
+      </div>
+
+      <a href="cardapio.html" class="btn white">Ver Cardápio Completo</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Bella Pizza — Feito com ❤</p>
+  </footer>
+
+  <script src="bellapizza.js"></script>
+
+  <!-- REDIRECIONA O BOTÃO FAZER PEDIDO -->
+  <script>
+    document.getElementById("btn-fazer-pedido").addEventListener("click", function () {
+      window.location.href = "loginbellapizza.html";
+    });
+  </script>
+
+</body>
+</html>
+
