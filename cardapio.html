@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bella Pizza - Cardápio</title>
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER PADRÃO IGUAL AO DA HOME -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-name">🍕 Bella Pizza</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="/">Início</a>
+        <a href="/cardapio.html" class="active">Cardápio</a>
+        <a href="/login.html" id="nav-account">Conta</a>
+        <a href="/carrinho.html" id="nav-cart">
+          Carrinho 
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO DO CARDÁPIO -->
+  <section class="hero hero-cardapio">
+    <h1 class="page-title">Nosso Cardápio</h1>
+    <p class="hero-sub">Escolha sua pizza favorita e faça seu pedido</p>
+  </section>
+
+  <!-- BOTÕES DE FILTRO -->
+  <div class="filters">
+    <button class="filter-btn active" data-cat="todas">Todas</button>
+    <button class="filter-btn" data-cat="tradicionais">Tradicionais</button>
+    <button class="filter-btn" data-cat="especiais">Especiais</button>
+    <button class="filter-btn" data-cat="vegetarianas">Vegetarianas</button>
+  </div>
+
+  <!-- GRID DE PRODUTOS (Carregado dinamicamente) -->
+  <main class="container">
+    <section class="product-grid" id="products-container">
+      <p style="text-align:center;">Carregando pizzas...</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Bella Pizza — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
